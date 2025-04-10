@@ -1,0 +1,444 @@
+/* Body background */
+.colorbody {
+  background-color: rgb(85, 50, 182);
+}
+.Trending-games {
+  background-color: rgb(7, 7, 7);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+/* Heading styling */
+.Trending-games h1 {
+  width: 100%; /* Full width of the container */
+  text-align: center; /* Center the heading */
+  color: white; /* Match the dark background for visibility */
+  font-size: 2rem; /* Large heading for desktop */
+  margin-bottom: 20px; /* Space between heading and game containers */
+}
+
+/* Game container styling (unchanged) */
+.gamecontainer {
+  text-align: center;
+  color: rgb(14, 13, 13);
+  background-color: rgb(9, 241, 9);
+  margin: -15px;
+  padding: 0px;
+  border-radius: 10px;
+  width: 200px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gamecontainer img {
+  border-radius: 10px;
+  height: 370px;
+  width: 200px;
+  display: flex;
+}
+
+/* Hover effect for game containers (unchanged) */
+.gamecontainer:hover {
+  background-color: gray;
+  animation: bounce 1s infinite;
+}
+
+/* Bounce animation (unchanged) */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive design for mobile (smaller heading) */
+@media (max-width: 768px) {
+  .Trending-games h1 {
+      font-size: 1.2rem; /* Smaller heading on mobile */
+      margin-bottom: 10px; /* Reduced spacing on mobile */
+  }
+
+  .gamecontainer {
+      width: 150px; /* Optionally reduce game container size on mobile */
+      height: 280px; /* Reduce height to maintain proportions */
+  }
+
+  .gamecontainer img {
+      width: 150px; /* Match container width */
+      height: 280px; /* Match container height */
+  }
+}
+
+/* Hero Section (Top Bar) */
+.hero-section {
+  background-color: #4282c2; /* Light gray background */
+  padding: 20px 0; /* Reduced padding for a compact top bar */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  color: #212529; /* Dark text */
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 1.5rem; /* Smaller heading for top bar */
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduced spacing */
+}
+
+.hero-text p {
+  font-size: 0.9rem; /* Smaller text for top bar */
+  color: #070707; /* Gray text for subtitle */
+  margin-bottom: 15px; /* Reduced spacing */
+}
+
+.hero-buttons .btn {
+  margin-right: 5px; /* Reduced spacing between buttons */
+  font-size: 0.9rem; /* Smaller buttons */
+  padding: 5px 10px; /* Reduced padding for buttons */
+}
+
+.device-image {
+  position: absolute;
+  right: -30px; /* Adjusted to fit in top bar */
+  top: -30px; /* Adjusted to fit in top bar */
+  transform: rotate(-15deg); /* Tilt the device */
+  max-width: 200px; /* Smaller device image for top bar */
+  z-index: 1;
+}
+.footer {
+  margin-top: 20px;
+  background-color: #f4f4f5; /* Purple background like in your screenshot */
+  padding: 40px 0 20px; /* Top padding for main footer, less for bottom bar */
+  color: rgb(15, 15, 15); /* White text for contrast */
+  border-radius: 30px 30px 0 0; /* Rounded top corners */
+}
+
+.footer h5 {
+  font-size: 1.1rem; /* Slightly larger heading for sections */
+  margin-bottom: 15px;
+  color: rgb(7, 7, 7); /* White heading to match text */
+}
+
+.footer ul {
+  list-style: disc; /* Bullet points like in your screenshot */
+  padding-left: 20px; /* Space for bullet points */
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #0a0a0a; /* Blue links like in your screenshot */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer ul li a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.newsletter-form {
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(15, 15, 15); /* White border for contrast */
+  border-radius: 4px;
+  background-color: transparent; /* Transparent background */
+  color: rgb(17, 17, 17); /* White text */
+}
+
+.newsletter-form input::placeholder {
+  color: #0c0c0c; /* Lighter gray placeholder text */
+}
+
+.newsletter-form button {
+  background-color: rgb(26, 25, 25); /* White button */
+  border: none;
+  color: #552ab6; /* Purple text to match background */
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #171718; /* Light gray on hover */
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 20px;
+  color: rgb(34, 33, 33); /* White text for contrast */
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .footer .row > div {
+      margin-bottom: 20px; /* Space between columns on mobile */
+  }
+
+  .footer h5 {
+      font-size: 1rem; /* Smaller headings on mobile */
+  }
+
+  .footer ul li a {
+      font-size: 0.8rem; /* Smaller links on mobile */
+  }
+
+  .newsletter-form input, .newsletter-form button {
+      width: 100%; /* Stack input and button on mobile */
+      margin-bottom: 10px;
+  }
+}
+.game-showcase {
+  background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Gradient background */
+  padding: 40px;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-showcase h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slide {
+  flex: 0 0 300px;
+  background: linear-gradient(145deg, #1f09e7, #1e08eb); /* Gradient slide background */
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slide:hover {
+  transform: scale(1); /* Slight zoom on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.slide img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+.slide:hover img {
+  opacity: 0.9;
+}
+
+.slide p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #fff;
+  margin-top: 15px;
+  padding: 0 10px;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.2s; /* Text fade-in */
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background: linear-gradient(90deg, #4282c2, #326aa5);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-btn:hover {
+  background: linear-gradient(90deg, #326aa5, #245282);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #4282c2;
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 768px) {
+  .game-showcase {
+      padding: 20px;
+      margin: 15px auto;
+  }
+  .game-showcase h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+  }
+  .slide {
+      flex: 0 0 220px;
+  }
+  .slide img {
+      height: 150px;
+  }
+  .slide p {
+      font-size: 0.95em;
+  }
+  .carousel-btn {
+      padding: 8px 15px;
+      font-size: 0.9em;
+  }
+}
+.video-showcase {
+  background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.video-showcase h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-video {
+  width: 100%;
+  height: 400px; /* Set a specific height for the video */
+  object-fit: cover; /* Ensures video fills the space */
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.showcase-video:hover {
+  opacity: 0.95;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.video-overlay h3 {
+  font-size: 2rem;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.2s;
+}
+
+.video-overlay p {
+  font-size: 1.2rem;
+  margin: 5px 0 0;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards 0.4s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.mute-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #4282c2, #326aa5);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.mute-btn:hover {
+  background: linear-gradient(90deg, #326aa5, #245282);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .video-showcase h2 {
+      font-size: 1.8rem;
+      margin: 20px 0;
+  }
+  .showcase-video {
+      height: 200px; /* Reduced height for mobile */
+  }
+  .video-overlay h3 {
+      font-size: 1.4rem;
+  }
+  .video-overlay p {
+      font-size: 0.9rem;
+  }
+  .mute-btn {
+      padding: 8px 12px;
+      font-size: 1rem;
+  }
+}
